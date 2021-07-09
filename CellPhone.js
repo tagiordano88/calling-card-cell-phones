@@ -43,10 +43,10 @@ class CellPhone {
         }
         
         if(this.callHistory.length > 1){
-            this.callHistory = this.callHistory.concat(", " + this.phoneNumber + " (" + terminateMessage + this.minutesUsed + " " + minutes +")");
+            this.callHistory += ", " + this.phoneNumber + " (" + terminateMessage + this.minutesUsed + " " + minutes +")";
         } 
         else {
-            this.callHistory = this.callHistory.concat(this.phoneNumber + " (" + terminateMessage + this.minutesUsed + " " + minutes +")");
+            this.callHistory += this.phoneNumber + " (" + terminateMessage + this.minutesUsed + " " + minutes +")";
         }
         this.minutesUsed = 0;
        
