@@ -53,7 +53,7 @@ class CellPhone {
     }
 
     getHistory() {        
-       return console.log(this.callHistory);
+       return this.callHistory;
     }
 
 }
